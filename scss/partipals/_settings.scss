@@ -1,3 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+//Fonts:
 $font-text: "Poppins", Helvetica, sans-serif;
-$dark-color: rgba(51, 170, 51, 0.6);
-$dark-grey: #999;
+$font-regular: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+
+//Colors:
+$primaty-color: #000000;
+$seconary-color: #05ab6e;
+$dark-color: #4e4e4e;
+$white-color: #ffffff;
+
+$transition: all 0.3s;
+$radius: 60px;
+
+@mixin btn($btn-bg, $btn-text, $btn-border) {
+  background: $btn-bg;
+  color: $btn-text;
+  border-color: $btn-border;
+  border-radius: 60px;
+  transition: $transition;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  width: 100px;
+  height: 56px;
+  font-weight: $font-medium;
+  @media (min-width: 576px) {
+    width: 133px;
+  }
+
+  &:hover {
+    background: lighten($btn-bg, 3%);
+  }
+
+  &.disabled,
+  &[disabled] {
+    background: desaturate($btn-bg, 100%);
+    border-color: desaturate($btn-border, 100%);
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,52 @@
+.btn-primary {
+  @include btn($seconary-color, $white-color, $seconary-color);
+}
+
+.btn-seconary {
+  @include btn($white-color, $dark-color, $dark-color);
+  margin-left: 25px;
+  &:hover {
+    background: darken($white-color, 10);
+  }
+}
+
+.card{
+  text-align: center;
+  .card-info{
+    margin: 30px 0;
+    h4{
+      font-size: 16px;
+      font-weight: $font-medium;
+      color: $seconary-color;
+    }
+    h3{
+      font-size: 40px;
+      font-weight: $font-semi-bold;
+    }
+  }
+  .item{
+    background-color: #EFF0F6;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    .item-title{
+      font-size: 20px;
+      font-weight: $font-medium;
+    }
+    .icon-element{
+      background-color: $seconary-color;
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+      margin: auto;
+      i{
+        color: $white-color;
+        font-size: 35px;
+      }
+    }
+  }
+}
