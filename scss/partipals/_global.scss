@@ -1,14 +1,15 @@
-@import "../vendor/bootstrap-grid.css";
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background: rgba(51, 170, 51, 0.6), 60%;
-  font-family: "Poppins", Helvetica, sans-serif;
+  background: ($dark-color, 60%);
+  font-family: $font-text;
   font-size: 14px;
   line-height: 1.7;
+  // font-weight: $font-normal;
+  // color: $color-dark;
 }
 
 .container {
@@ -16,5 +17,3 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-
-/*# sourceMappingURL=style.css.map */
