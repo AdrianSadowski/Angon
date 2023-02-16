@@ -7,7 +7,24 @@
     box-shadow: 13px 7px 25px 15px #f7f7f7;
     max-width: 378px;
     margin: auto;
-    .plan-box-magic{
+    &:hover {
+      color: $white-color;
+      background-color: $seconary-color;
+      .plan-description {
+        color: $white-color;
+      }
+      button {
+        background-color: $seconary-color;
+        border-color: $white-color;
+        color: $white-color;
+        &:hover {
+          background-color: $white-color;
+          border-color: #3693FF;
+          color: #3693ff;
+        }
+      }
+    }
+    .plan-box-magic {
       padding: 0;
     }
     h5 {
@@ -34,18 +51,17 @@
       padding-bottom: 20px;
       span {
         padding: 10px;
-
       }
       text-align: left;
     }
   }
-  .active{
-    color: $white-color;
-    background-color: $seconary-color;
-    .plan-description {
-      color: $white-color;
-    }
-  }
+  // .active{
+  //   color: $white-color;
+  //   background-color: $seconary-color;
+  //   .plan-description {
+  //     color: $white-color;
+  //   }
+  // }
 }
 
 @media (min-width: 768px) {
