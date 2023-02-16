@@ -55,7 +55,9 @@
       }
 
       &:hover {
-        background: darken(rgba(7, 121, 228, 0.2), 3%);
+        background-color: $white-color;
+        border-color: #3693ff;
+        color: #3693ff;
       }
     }
   }

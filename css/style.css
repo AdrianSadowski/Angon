@@ -431,7 +431,9 @@ body {
   }
 }
 .started .started-description button:hover {
-  background: rgba(7, 113, 213, 0.2);
+  background-color: #ffffff;
+  border-color: #3693ff;
+  color: #3693ff;
 }
 
 @media (min-width: 768px) {
