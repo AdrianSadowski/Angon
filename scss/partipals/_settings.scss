@@ -12,6 +12,7 @@ $primaty-color: #000000;
 $seconary-color: #05ab6e;
 $dark-color: #4e4e4e;
 $white-color: #ffffff;
+$grey-color: #aaaaaa;
 
 $transition: all 0.3s;
 $radius: 60px;
@@ -21,10 +22,10 @@ $radius: 60px;
   color: $btn-text;
   border-color: $btn-border;
   border-radius: 60px;
-  transition: $transition;
   display: inline-block;
   border-width: 1px;
   border-style: solid;
+  font-size: 14px;
   padding: 12px;
   text-decoration: none;
   text-align: center;
@@ -37,7 +38,7 @@ $radius: 60px;
   }
 
   &:hover {
-    background: lighten($btn-bg, 3%);
+    background: darken($btn-bg, 3%);
   }
 
   &.disabled,

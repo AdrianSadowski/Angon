@@ -1,0 +1,73 @@
+.pricing {
+  .plan-box {
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 13px 7px 25px 15px #f7f7f7;
+    -moz-box-shadow: 13px 7px 25px 15px #f7f7f7;
+    box-shadow: 13px 7px 25px 15px #f7f7f7;
+    max-width: 378px;
+    margin: auto;
+    .plan-box-magic{
+      padding: 0;
+    }
+    h5 {
+      font-size: 24px;
+      font-weight: $font-medium;
+      margin: 0;
+    }
+    h4 {
+      font-size: 32px;
+      font-weight: $font-medium;
+      margin: 0;
+      span {
+        font-size: 16px;
+        font-weight: $font-regular;
+      }
+    }
+    .plan-description {
+      color: $grey-color;
+    }
+    .plan-info {
+      padding-left: 20%;
+      font-size: 14px;
+      font-weight: $font-regular;
+      padding-bottom: 20px;
+      span {
+        padding: 10px;
+
+      }
+      text-align: left;
+    }
+  }
+  .active{
+    color: $white-color;
+    background-color: $seconary-color;
+    .plan-description {
+      color: $white-color;
+    }
+    .btn-third{
+      
+    }
+
+  }
+}
+
+@media (min-width: 768px) {
+  .pricing {
+    .plan-box {
+      text-align: left;
+      padding: 4px;
+      .plan-info {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .pricing {
+    .plan-box {
+      padding: 20px;
+    }
+  }
+}

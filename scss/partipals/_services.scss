@@ -1,18 +1,44 @@
-.services{
+// Services - mostly used re-used component card in _elements.scss
+.services {
   margin-top: 60px;
+  .card .item {
+    background-color: #eff0f6;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    .item-title {
+      font-size: 20px;
+      font-weight: $font-medium;
+    }
+    .icon-element {
+      background-color: $seconary-color;
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+      margin: auto;
+      i {
+        color: $white-color;
+        font-size: 35px;
+      }
+    }
+  }
 }
-@media (min-width: 576px){
-  .services{
+@media (min-width: 576px) {
+  .services {
     margin-top: 100px;
   }
 }
-@media (min-width: 992px){
-  .services{
+@media (min-width: 1024px) {
+  .services {
     margin-top: 200px;
   }
 }
-@media (min-width: 576px){
-  .services{
+@media (min-width: 1200px) {
+  .services {
     margin-top: 300px;
   }
 }
