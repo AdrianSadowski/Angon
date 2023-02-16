@@ -347,6 +347,7 @@ body {
 .pricing .active .plan-description {
   color: #ffffff;
 }
+
 @media (min-width: 768px) {
   .pricing .plan-box {
     text-align: left;
